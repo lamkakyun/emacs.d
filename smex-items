@@ -1,0 +1,22 @@
+
+;; ----- smex-history -----
+(
+ 2048-game
+ iedit-mode
+ direx:jump-to-directory
+ package-install
+ neotree-toggle
+ js2-mode
+ package-list-packages
+)
+
+;; ----- smex-data -----
+(
+ (package-list-packages . 1)
+ (js2-mode . 1)
+ (2048-game . 3)
+ (neotree-toggle . 1)
+ (package-install . 1)
+ (direx:jump-to-directory . 1)
+ (iedit-mode . 1)
+)
