@@ -98,6 +98,6 @@
              :init
              (which-key-mode)
              )
-(use-package iedit)
+;; (use-package iedit)
 
 (provide 'init-env)
