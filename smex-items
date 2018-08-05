@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ avy-goto-char
+ goto-char
  2048-game
  iedit-mode
  direx:jump-to-directory
  package-install
  neotree-toggle
- js2-mode
- package-list-packages
 )
 
 ;; ----- smex-data -----
@@ -19,4 +19,6 @@
  (package-install . 1)
  (direx:jump-to-directory . 1)
  (iedit-mode . 1)
+ (goto-char . 3)
+ (avy-goto-char . 2)
 )

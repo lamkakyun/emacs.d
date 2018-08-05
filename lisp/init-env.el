@@ -1,12 +1,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; plugin: smex: M-x enhancement for emacs, settings
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require 'smex)
-(smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+;; (require 'smex)
+;; (smex-initialize)
+;; (global-set-key (kbd "M-x") 'smex)
+;; (global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; ;; This is your old M-x.
+;; (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -77,9 +77,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; plugin: popwin
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;(use-package popwin
-;;           :config
-;;           (popwin-mode t))
+(use-package popwin
+             :config
+             (popwin-mode t))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -99,5 +99,31 @@
              (which-key-mode)
              )
 ;; (use-package iedit)
+(use-package avy)
+(use-package ivy
+             :init
+             (ivy-mode t)
+             (setq ivy-use-virtual-buffers t)
+             )
+(use-package editorconfig
+             :config
+             (editorconfig-mode t))
+(use-package crux)
+(use-package exec-path-from-shell
+             :config
+             (exec-path-from-shell-initialize))
+(use-package indent-guide
+             :config
+             (indent-guide-global-mode))
+(use-package window-numbering
+             :init
+             (window-numbering-mode t)
+             )
+(use-package ace-jump-mode)
+(use-package flycheck
+             :config
+             (global-flycheck-mode t)
+             (flycheck-ycmd-setup))
+
 
 (provide 'init-env)
