@@ -7,6 +7,7 @@
 (require 'init-theme)
 (require 'keyset)
 (require 'init-custom)
+(require 'init-w3m)
 
 ;; (defun hack-emacs ()
 ;;     "config file"

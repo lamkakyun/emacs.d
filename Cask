@@ -86,4 +86,3 @@
 (depends-on "yasnippet")
 (depends-on "ycmd")
 (depends-on "zeal-at-point")
-
