@@ -6,7 +6,7 @@
 (load "~/.emacs.d/lisp/my-abbrev.el")
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8)
-(electric-pair-mode t)
+;; (electric-pair-mode t)
 (load-theme 'klere t)
 
 (provide 'init-theme)

@@ -124,6 +124,32 @@
              :config
              (global-flycheck-mode t)
              (flycheck-ycmd-setup))
+(use-package smartparens-config
+             :init
+             (smartparens-global-mode t))
+(use-package highlight-parentheses
+             :config
+             (global-highlight-parentheses-mode t))
+(use-package all-the-icons
+             :config
+             (mode-icons-mode t))
+(use-package xcscope
+             :config
+             (cscope-minor-mode t))
+(use-package ggtags
+             :config
+             (ggtags-mode t))
+(use-package dashboard
+             :init
+             (dashboard-setup-startup-hook)
+             (setq dashboard-banner-logo-title "Cross Emacs")
+             (setq dashboard-setup-startup-banner 'logo)
+             (setq dashboard-items '((recents . 5)
+                                     (bookmarks . 5)
+                                     (projects . 5)
+                                     (agenda . 5)))
+             )
+
 
 
 (provide 'init-env)
