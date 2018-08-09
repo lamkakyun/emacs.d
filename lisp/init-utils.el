@@ -8,6 +8,7 @@
 (require 'keyset)
 (require 'init-custom)
 (require 'init-w3m)
+(require 'my-command)
 
 ;; (defun hack-emacs ()
 ;;     "config file"
