@@ -19,6 +19,9 @@
   (global-set-key (kbd "<f12>") 'find-file-in-project)
   (global-set-key (kbd "<f6>") 'my-prev-buffer)
   (global-set-key (kbd "<f7>") 'my-next-buffer)
+  ;; 这个按键无效
+  ;;  (global-set-key (kbd "C-;") 'iedit-mode)
+  (global-set-key (kbd "C-c m u") 'iedit-mode)
   )
 
 (key-set)

@@ -7,21 +7,42 @@
 ;;  (message (string-equal "*" (substring (buffer-name) 0 1)))
   )
 
-(defun my-lookup-wikipedia ()
-  "查看wikipedia"
+;;(defun my-lookup-wikipedia ()
+;;  "查看wikipedia"
+;;  (interactive)
+;;  (let (word)
+;;    (setq word
+;;	  (if (use-region-p)
+;;	      (buffer-substring-no-properties (region-beginning) (region-end))
+;;	    (current-word)
+;;	      )
+;;	  )
+;;    (setq word (replace-regexp-in-string " " "_" word))
+;;    (eww (concat "https://en.wikipedia.org/wiki/" word))
+;;    
+;;    )
+;;  )
+
+(defun _wikipedia()
   (interactive)
-  (let (word)
-    (setq word
-	  (if (use-region-p)
-	      (buffer-substring-no-properties (region-beginning) (region-end))
-	    (current-word)
-	      )
-	  )
-    (setq word (replace-regexp-in-string " " "_" word))
-    (eww (concat "https://en.wikipedia.org/wiki/" word))
-    
-    )
+  (eww (concat "https://en.wikipedia.org/wiki/" (read-from-minibuffer "wiki keyword: ")))
   )
+
+(defun _bing()
+  (interactive)
+  (eww (concat "https://cn.bing.com/search?q=" (read-from-minibuffer "bing keyword: ")))
+  )
+
+(defun _translate()
+  (interactive)
+  (eww (concat "http://dict.youdao.com/search?q=" (read-from-minibuffer "translate keyword: ")))
+  )
+
+(defun _phpdoc()
+  (interactive)
+  (eww (concat "http://php.net/manual-lookup.php?scope=quickref&pattern=" (read-from-minibuffer "php keyword: ")))
+  )
+
 
 (defun my-new-empty-buffer ()
   "create a new empty buffer"
