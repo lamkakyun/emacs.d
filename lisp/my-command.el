@@ -96,6 +96,12 @@
     )
   )
 
+(defun _init_file()
+  (interactive)
+  (find-file "~/.emacs.d/init.el")
+  )
 
 
 (provide 'my-command)
+
+
