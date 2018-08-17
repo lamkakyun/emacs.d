@@ -22,6 +22,7 @@
   ;; 这个按键无效
   ;;  (global-set-key (kbd "C-;") 'iedit-mode)
   (global-set-key (kbd "C-c m u") 'iedit-mode)
+  ;; (global-set-key (kbd "<f5") '_init_file)
   )
 
 (key-set)
